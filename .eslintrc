@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "no-param-reassign": "off",
+    "no-underscore-dangle": "off",
+    "max-len": ["error", 120],
+    "no-console": "off",
+    "no-plusplus": "off"
+	}
+}
