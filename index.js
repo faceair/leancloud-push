@@ -19,7 +19,7 @@ class LCPush extends EventEmitter {
     this.config.appKey = config.appKey;
 
     this.config.installation = config.installation ? config.installation : {};
-    this.config.installation.installationId = config.installationId;
+    if (!this.config.installation.installationId) this.config.installation.installationId = config.installationId;
     if (!this.config.installation.deviceType) this.config.installation.deviceType = 'web';
 
     this.config.heartbeatsTime = config.heartbeatsTime ? config.heartbeatsTime : 30 * 1000;
